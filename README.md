@@ -1,11 +1,11 @@
-## 📱 Android Application – Anti Food Waste
+##  Android Application – Anti Food Waste
 
 This project consists of developing an **Android mobile application** that allows clients to reserve unsold food baskets from local commerces while enabling merchants to manage their offers.  
 The main objective of this application is to **reduce food waste** by connecting clients with commerces that have surplus food available.
 
 ---
 
-## 👥 Application Actors
+##  Application Actors
 
 The application includes the following actors:
 
@@ -27,7 +27,7 @@ The application includes the following actors:
 
 ---
 
-## 🔐 Authentication
+##  Authentication
 
 The application provides **local authentication** with the following features:
 
@@ -38,7 +38,7 @@ The application provides **local authentication** with the following features:
 
 ---
 
-## 🧑‍💻 Client Features
+##  Client Features
 
 Clients can:
 
@@ -50,7 +50,7 @@ Clients can:
 
 ---
 
-## 🏪 Merchant Features
+##  Merchant Features
 
 Merchants can:
 
@@ -61,7 +61,7 @@ Merchants can:
 
 ---
 
-## 🗄️ Local Database
+##  Local Database
 
 The application uses a **local database** with the following tables:
 
