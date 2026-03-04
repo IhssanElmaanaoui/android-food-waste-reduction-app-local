@@ -12,8 +12,11 @@ import java.util.List;
 public interface CommerceDao {
 
     @Insert
-    void insert(Commerce commerce);
+    long insert(Commerce commerce);
 
     @Query("SELECT * FROM Commerce")
     List<Commerce> getAllCommerce();
+
+    @Query("SELECT * FROM Commerce WHERE ownerId = :ownerId LIMIT 1")
+    Commerce getByOwnerId(int ownerId);
 }

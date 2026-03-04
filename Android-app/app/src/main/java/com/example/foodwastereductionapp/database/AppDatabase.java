@@ -14,7 +14,7 @@ import com.example.foodwastereductionapp.model.User;
 
 @Database(
         entities = {User.class, Commerce.class, Panier.class, Reservation.class},
-        version = 1
+        version = 2
 )
 public abstract class AppDatabase extends RoomDatabase {
 

@@ -14,7 +14,7 @@ import java.util.List;
 public interface PanierDao {
 
     @Insert
-    void insert(Panier panier);
+    long insert(Panier panier);
 
     @Update
     void update(Panier panier);
@@ -24,4 +24,10 @@ public interface PanierDao {
 
     @Query("SELECT * FROM Panier")
     List<Panier> getAllPaniers();
+
+    @Query("SELECT * FROM Panier WHERE commerceId = :commerceId")
+    List<Panier> getPaniersByCommerceId(int commerceId);
+
+    @Query("SELECT * FROM Panier WHERE id = :id LIMIT 1")
+    Panier getById(int id);
 }

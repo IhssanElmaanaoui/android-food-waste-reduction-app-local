@@ -12,8 +12,11 @@ import java.util.List;
 public interface ReservationDao {
 
     @Insert
-    void insert(Reservation reservation);
+    long insert(Reservation reservation);
 
     @Query("SELECT * FROM Reservation")
     List<Reservation> getAllReservations();
+
+    @Query("SELECT r.* FROM Reservation r INNER JOIN Panier p ON r.panierId = p.id WHERE p.commerceId = :commerceId")
+    List<Reservation> getReservationsByCommerceId(int commerceId);
 }
