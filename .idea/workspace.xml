@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de52538c-d512-4e5f-8e5b-de37a22ae0e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Android-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/.idea/AndroidProjectSystem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/androidTest/java/com/example/foodwastereductionapp/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/dao/CommerceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/dao/PannierDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/dao/ReservationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/database/AppDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/model/Commerce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/model/Pannier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/model/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/java/com/example/foodwastereductionapp/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/app/src/test/java/com/example/foodwastereductionapp/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android-app/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3ATpwNYep4luasf65lWyVvO54gT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Preojects/android-food-waste-reduction-app-local"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de52538c-d512-4e5f-8e5b-de37a22ae0e5" name="Changes" comment="" />
+      <created>1772626651550</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772626651550</updated>
+    </task>
+    <servers />
+  </component>
+</project>
