@@ -30,4 +30,7 @@ public interface PanierDao {
 
     @Query("SELECT * FROM Panier WHERE id = :id LIMIT 1")
     Panier getById(int id);
+
+    @Query("SELECT * FROM Panier WHERE commerceId = :commerceId AND title = :title LIMIT 1")
+    Panier getByCommerceIdAndTitle(int commerceId, String title);
 }
