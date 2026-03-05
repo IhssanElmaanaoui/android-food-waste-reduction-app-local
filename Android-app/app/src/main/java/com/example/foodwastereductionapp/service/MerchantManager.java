@@ -23,21 +23,20 @@ public class MerchantManager {
         return (int) db.panierDao().insert(panier);
     }
 
-    public boolean modifierPanier(int panierId, String titre, double prix, int quantite) {
-        Panier panier = db.panierDao().getById(panierId);
+    public boolean modifierPanier(int commerceId, String titre, double prix, int quantite) {
+        Panier panier = db.panierDao().getByCommerceIdAndTitle(commerceId, titre);
         if (panier == null) {
             return false;
         }
 
-        panier.title = titre;
         panier.price = prix;
         panier.quantity = quantite;
         db.panierDao().update(panier);
         return true;
     }
 
-    public boolean supprimerPanier(int panierId) {
-        Panier panier = db.panierDao().getById(panierId);
+    public boolean supprimerPanier(int commerceId, String titre) {
+        Panier panier = db.panierDao().getByCommerceIdAndTitle(commerceId, titre);
         if (panier == null) {
             return false;
         }
