@@ -28,6 +28,9 @@ public interface PanierDao {
     @Query("SELECT * FROM Panier WHERE commerceId = :commerceId")
     List<Panier> getPaniersByCommerceId(int commerceId);
 
+    @Query("SELECT * FROM Panier WHERE commerceId = :commerceId AND quantity > 0")
+    List<Panier> getAvailablePaniersByCommerceId(int commerceId);
+
     @Query("SELECT * FROM Panier WHERE id = :id LIMIT 1")
     Panier getById(int id);
 

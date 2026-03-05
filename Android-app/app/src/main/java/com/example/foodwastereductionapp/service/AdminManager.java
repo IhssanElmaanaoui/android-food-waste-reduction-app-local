@@ -20,7 +20,7 @@ public class AdminManager {
     }
 
     public boolean changerRoleUtilisateur(String email, String nouveauRole) {
-        User user = db.userDao().getByEmail(email);
+        User user = db.userDao().findByEmail(email);
         if (user == null) {
             return false;
         }

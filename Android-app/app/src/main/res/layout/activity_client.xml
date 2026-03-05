@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnBackAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour Auth" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Espace Client"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Commerces"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCommerces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#EEEEEE"
+            android:minHeight="90dp"
+            android:padding="10dp"
+            android:text="Aucun commerce" />
+
+        <EditText
+            android:id="@+id/etCommerceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="ID commerce pour voir paniers"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnLoadPaniers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Voir paniers disponibles" />
+
+        <TextView
+            android:id="@+id/tvPaniersDisponibles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#EEEEEE"
+            android:minHeight="90dp"
+            android:padding="10dp"
+            android:text="Aucun panier disponible" />
+
+        <EditText
+            android:id="@+id/etPanierId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="ID panier a reserver"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnReserver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Reserver panier" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Historique reservations"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHistorique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#EEEEEE"
+            android:minHeight="90dp"
+            android:padding="10dp"
+            android:text="Aucune reservation" />
+
+        <EditText
+            android:id="@+id/etReservationId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="ID reservation a annuler"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnAnnuler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:text="Annuler reservation" />
+    </LinearLayout>
+</ScrollView>
