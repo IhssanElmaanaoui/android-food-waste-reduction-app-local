@@ -3,6 +3,7 @@ package com.example.foodwastereductionapp.dao;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 import com.example.foodwastereductionapp.model.User;
 
@@ -14,6 +15,12 @@ public interface UserDao {
     @Insert
     long insert(User user);
 
+    @Update
+    void update(User user);
+
     @Query("SELECT * FROM User")
     List<User> getAllUsers();
+
+    @Query("SELECT * FROM User WHERE email = :email LIMIT 1")
+    User getByEmail(String email);
 }
