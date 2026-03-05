@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="screen_top">#F3FBF6</color>
+    <color name="screen_bottom">#E7F3EC</color>
+    <color name="card_stroke">#CFE3D7</color>
+    <color name="card_bg">#FFFFFFFF</color>
+    <color name="title_color">#1C3A2D</color>
+    <color name="text_primary">#2F473C</color>
+    <color name="hint_color">#6C8A7C</color>
+    <color name="button_start">#2E7D5A</color>
+    <color name="button_end">#1F6B48</color>
+    <color name="button_secondary_start">#4B8C6A</color>
+    <color name="button_secondary_end">#3A7A58</color>
 </resources>
