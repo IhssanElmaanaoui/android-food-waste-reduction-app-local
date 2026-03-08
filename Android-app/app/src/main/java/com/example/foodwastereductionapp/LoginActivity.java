@@ -12,6 +12,7 @@ import androidx.room.Room;
 
 import com.example.foodwastereductionapp.auth.SessionManager;
 import com.example.foodwastereductionapp.database.AppDatabase;
+import com.example.foodwastereductionapp.model.Commerce;
 import com.example.foodwastereductionapp.model.User;
 
 public class LoginActivity extends AppCompatActivity {
@@ -29,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
                 .fallbackToDestructiveMigration()
                 .build();
         sessionManager = new SessionManager(this);
-        ensureAdminExists();
+        ensureDemoUsersExist();
 
         EditText etEmail = findViewById(R.id.etLoginEmail);
         EditText etPassword = findViewById(R.id.etLoginPassword);
@@ -62,18 +63,36 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void ensureAdminExists() {
-        User admin = db.userDao().findByEmail("admin@demo.com");
-        if (admin != null) {
-            return;
+    private void ensureDemoUsersExist() {
+        if (db.userDao().findByEmail("admin@demo.com") == null) {
+            User adminUser = new User();
+            adminUser.name = "Admin";
+            adminUser.email = "admin@demo.com";
+            adminUser.password = "1234";
+            adminUser.role = "admin";
+            db.userDao().insert(adminUser);
         }
-
-        User adminUser = new User();
-        adminUser.name = "Admin";
-        adminUser.email = "admin@demo.com";
-        adminUser.password = "1234";
-        adminUser.role = "admin";
-        db.userDao().insert(adminUser);
+        if (db.userDao().findByEmail("client@demo.com") == null) {
+            User clientUser = new User();
+            clientUser.name = "Client Demo";
+            clientUser.email = "client@demo.com";
+            clientUser.password = "1234";
+            clientUser.role = "client";
+            db.userDao().insert(clientUser);
+        }
+        if (db.userDao().findByEmail("merchant@demo.com") == null) {
+            User merchantUser = new User();
+            merchantUser.name = "Commerçant Demo";
+            merchantUser.email = "merchant@demo.com";
+            merchantUser.password = "1234";
+            merchantUser.role = "merchant";
+            long merchantId = db.userDao().insert(merchantUser);
+            Commerce commerce = new Commerce();
+            commerce.name = "Boulangerie Demo";
+            commerce.address = "1 rue de la Paix";
+            commerce.ownerId = (int) merchantId;
+            db.commerceDao().insert(commerce);
+        }
     }
 
     private void startRoleActivity(String role) {

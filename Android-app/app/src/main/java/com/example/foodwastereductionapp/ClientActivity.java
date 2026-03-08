@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,7 +59,7 @@ public class ClientActivity extends AppCompatActivity {
     }
 
     private void setupActions() {
-        Button btnBackAuth = findViewById(R.id.btnBackAuth);
+        ImageButton btnBackAuth = findViewById(R.id.btnBackAuth);
         Button btnLoadPaniers = findViewById(R.id.btnLoadPaniers);
         Button btnReserver = findViewById(R.id.btnReserver);
         Button btnAnnuler = findViewById(R.id.btnAnnuler);

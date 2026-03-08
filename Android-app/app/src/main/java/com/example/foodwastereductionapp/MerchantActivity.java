@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -84,7 +85,7 @@ public class MerchantActivity extends AppCompatActivity {
         Button btnAddPanier = findViewById(R.id.btnAddPanier);
         Button btnUpdatePanier = findViewById(R.id.btnUpdatePanier);
         Button btnDeletePanier = findViewById(R.id.btnDeletePanier);
-        Button btnBackAuth = findViewById(R.id.btnBackAuth);
+        ImageButton btnBackAuth = findViewById(R.id.btnBackAuth);
 
         btnAddPanier.setOnClickListener(v -> addPanier());
         btnUpdatePanier.setOnClickListener(v -> updatePanier());

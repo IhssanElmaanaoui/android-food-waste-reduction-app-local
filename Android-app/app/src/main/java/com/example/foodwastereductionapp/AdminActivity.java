@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -59,7 +60,7 @@ public class AdminActivity extends AppCompatActivity {
         Button btnAdminSetClient = findViewById(R.id.btnAdminSetClient);
         Button btnAdminSetMerchant = findViewById(R.id.btnAdminSetMerchant);
         Button btnAdminDeleteCommerce = findViewById(R.id.btnAdminDeleteCommerce);
-        Button btnBackAuth = findViewById(R.id.btnBackAuth);
+        ImageButton btnBackAuth = findViewById(R.id.btnBackAuth);
 
         btnAdminSetClient.setOnClickListener(v -> changeUserRole("client"));
         btnAdminSetMerchant.setOnClickListener(v -> changeUserRole("merchant"));
